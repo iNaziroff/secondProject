@@ -22,6 +22,8 @@ body{
 }
 .blurline{
   display: inline-block;
+  position: relative;
+  top: -2px;
   width: 80px;
   height: 4px;
   filter: blur(4px);
@@ -58,6 +60,15 @@ body{
   clear: both;
 }
 /* header-section */
+.header-section{
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 3px 16px 0 rgb(0 0 0 / 10%);
+}
 .site-brand img{
   width: 125px;
 }
@@ -234,4 +245,99 @@ body{
 }
 .star-list{
   color: gold;
+}
+
+/* portfolio-section */
+.portfolio-section{
+  padding: 150px 0;
+}
+.portfolio-filters{
+  padding-left: 0;
+  margin-bottom: 30px;
+}
+.portfolio-filters li{
+  cursor: pointer;
+  display: inline-block;
+  text-transform: uppercase;
+  margin-right: 40px;
+  color: #05364d;
+  font-size: 13px;
+  font-weight: 400;
+}
+.portfolio-filters li:hover{
+  color: #1345e6;
+}
+.portfolio-filters li.active{
+  color: #1345e6;
+}
+.portfolio-images{
+  position: relative;
+}
+.portfolio-img{
+  position: relative;
+  padding: 10px;
+  box-sizing: border-box;
+  display: inline-block;
+  cursor: pointer;
+  width: 50%;
+}
+.portfolio-img-2{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.portfolio-img-3, .portfolio-img-4{
+  position: absolute;
+  width: 25%;
+  top: 322px;
+}
+.portfolio-img-4{
+  right: 0;
+}
+.portfolio-img-5{
+  position: absolute;
+  top: 883px;
+  left: 0;
+}
+.portfolio-img-6{
+  position: absolute;
+  top: 653px;
+  right: 0;
+}
+.portfolio-images img{
+  width: 100%;
+}
+.portfolio-overlay{
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19,69,230,.9);
+  visibility: hidden;
+}
+.portfolio-info{
+  z-index: 2;
+  position: absolute;
+  bottom: 44px;
+  left: 80px;
+  color: white;
+  font-size: 14px;
+  visibility: hidden;
+}
+.portfolio-info a{
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+.portfolio-img:hover .portfolio-overlay{
+  visibility: visible;
+  top: 20px;
+  left: 20px;
+}
+.portfolio-img:hover .portfolio-info{
+  visibility: visible;
+  left: 60px;
+  bottom: 20px;
 }
