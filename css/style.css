@@ -272,6 +272,7 @@ body{
 }
 .portfolio-images{
   position: relative;
+  height: 1100px;
 }
 .portfolio-img{
   position: relative;
@@ -296,12 +297,12 @@ body{
 }
 .portfolio-img-5{
   position: absolute;
-  top: 883px;
+  top: 860px;
   left: 0;
 }
 .portfolio-img-6{
   position: absolute;
-  top: 653px;
+  top: 655px;
   right: 0;
 }
 .portfolio-images img{
