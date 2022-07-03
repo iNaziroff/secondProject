@@ -186,7 +186,11 @@ body{
 }
 .services-item:hover{
   background-color: #5f30ff;
-  color: white;
+}
+.services-item:hover .service-info,
+.services-item:hover .main-text,
+.services-item:hover .service-link{
+  color: #ffffff;
 }
 .services-item img{
   margin-bottom: 40px;
@@ -205,3 +209,5 @@ body{
   text-decoration: none;
   text-transform: uppercase;
 }
+
+/* testimonial-section */
