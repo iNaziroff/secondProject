@@ -395,3 +395,9 @@ body{
 .blog-item a:hover{
   color: #ed239f;
 }
+ /* partners-section */
+ .partner{
+  margin: 50px 0 100px;
+  display: inline-block;
+  padding: 0 30px;
+ }
