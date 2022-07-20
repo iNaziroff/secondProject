@@ -1,0 +1,32 @@
+.contact{
+  padding: 100px 20px;
+}
+textarea,input{
+  width: 100%;
+  padding: 0.625rem 0.625rem 0.625rem 1.25rem;
+  margin: 0.625rem auto;
+  border: 1px solid gray;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #495057;
+  background-color: transparent;
+  box-sizing: border-box;
+}
+textarea:focus,
+input:focus{
+  outline: 0;
+}
+.half-row{
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+}
+.contact__firstName{
+  padding-right: 1.06rem;
+}
+.contact__email{
+  padding-left: 1.06rem;
+}
+.contact-send{
+  margin-top: 1.875rem;
+}
