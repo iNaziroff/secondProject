@@ -64,7 +64,7 @@
   background-color: #f8faff;
   text-align: center;
   padding: 5px 10px;
-  margin-right: 15px;
+  margin-right: 20px;
 }
 .stat-number{
   background: linear-gradient(90deg,#1345e6 0%,#ed239f 100%);
@@ -150,7 +150,7 @@
 
 /* portfolio-section */
 .portfolio-section{
-  padding: 150px 0;
+  padding-top: 150px;
 }
 .portfolio-filters{
   padding-left: 0;
@@ -173,7 +173,9 @@
 }
 .portfolio-images{
   position: relative;
-  height: 1050px;
+}
+.portfolio-images img{
+  width: 100%;
 }
 .portfolio-img{
   position: relative;
@@ -190,8 +192,8 @@
 }
 .portfolio-img-3, .portfolio-img-4{
   position: absolute;
-  width: 25%;
-  top: 322px;
+  width: 50%;
+  top: 315px;
 }
 .portfolio-img-4{
   right: 0;
@@ -205,9 +207,6 @@
   position: absolute;
   top: 655px;
   right: 0;
-}
-.portfolio-images img{
-  width: 100%;
 }
 .portfolio-overlay{
   position: absolute;
@@ -283,9 +282,87 @@
 .blog-item a:hover{
   color: #ed239f;
 }
- /* partners-section */
- .partner{
+/* partners-section */
+.partner{
   margin: 50px 0 100px;
   display: inline-block;
   padding: 0 30px;
- }
+}
+
+/* media query */
+@media screen and (max-width: 991px) {
+  .hero-img img{
+    display: none;
+  }
+  .hero-section > div{
+    width: 100%;
+  }
+  .statistics-section{
+    padding-top: 1rem;
+    text-align: center;
+  }
+
+  .whoami-img img{
+    display: none;
+  }
+  .whoami-section > div{
+    width: 100%;
+  }
+  .services-item{
+    width: 45%;
+    margin-bottom: 20px;
+  }
+  .testimonial-section > div{
+    width: 100%;
+    float: none;
+  }
+  .blog-item{
+    width: 45%;
+    margin-bottom: 20px;
+  }
+  .partner{
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero-banner{
+    background: none;
+    min-height: auto;
+  }
+  .stat-item{
+    width: 100%;
+    margin-bottom: 0.8rem;
+    margin-right: 0;
+    box-sizing: border-box;
+  }
+  .services-item{
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 0.8rem;
+  }
+  .portfolio-section{
+    padding: 1.5rem 0;
+  }
+  .portfolio-img{
+    width: 100%;
+  }
+  .portfolio-img-2,
+  .portfolio-img-3,
+  .portfolio-img-4,
+  .portfolio-img-5,
+  .portfolio-img-6{
+    position: static;
+  }
+  .blog-section{
+    padding: 1.5rem 0;
+  }
+  .blog-item{
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+}

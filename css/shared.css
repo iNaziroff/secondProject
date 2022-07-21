@@ -81,7 +81,7 @@ body{
   box-shadow: 0 3px 16px 0 rgb(0 0 0 / 10%);
 }
 .site-brand img{
-  width: 125px;
+  width: 70px;
 }
 .site-brand{
   display: inline-block;
@@ -142,4 +142,23 @@ footer{
   font-weight: 300;
   font-family: "Roboto",sans-serif;
   color: #797979;
+}
+
+/* media query */
+@media screen and (max-width: 991px) {
+  .container{
+    width: 95%;
+  }
+  .head-nav{
+    display: none;
+  }
+}
+@media screen and (max-width: 767px){
+  .container{
+    width: 92%;
+  }
+  .main-button{
+    display: none;
+  }
+
 }

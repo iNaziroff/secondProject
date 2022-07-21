@@ -30,3 +30,9 @@ input:focus{
 .contact-send{
   margin-top: 1.875rem;
 }
+@media screen and (max-width: 991px){
+  .half-row{
+    padding: 0;
+    width: 100%;
+  }
+}
