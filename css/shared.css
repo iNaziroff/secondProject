@@ -141,6 +141,9 @@
   font-style: italic;
   font-display: swap;
 }
+html{
+  scroll-behavior: smooth;
+}
 body{
   font-family: Roboto;
   margin: 0;
