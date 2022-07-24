@@ -16,23 +16,26 @@ textarea:focus,
 input:focus{
   outline: 0;
 }
-.half-row{
-  width: 50%;
-  float: left;
-  box-sizing: border-box;
+.half-flex{
+  display: flex;
 }
 .contact__firstName{
   padding-right: 1.06rem;
+  flex: 1;
 }
 .contact__email{
   padding-left: 1.06rem;
+  flex: 1;
 }
 .contact-send{
   margin-top: 1.875rem;
 }
 @media screen and (max-width: 991px){
-  .half-row{
-    padding: 0;
-    width: 100%;
+  .half-flex{
+    flex-direction: column;
   }
+.contact__firstName,
+.contact__email{
+  padding: 0;
+}
 }
